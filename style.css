@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*MOBILE FIRST*/
 
 *{
     margin: 0;
@@ -8,4 +9,88 @@
 
 body{
     font-family: "Roboto", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+h1{
+    padding: 10px 0px;
+    color: lightblue;
+    text-shadow: 1px 1px 1px black;
+}
+
+div#place{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#place input{
+    width: 300px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 0px 5px 5px 5px;
+    outline: none;
+    color: black;
+    transition: border .5s;
+}
+
+#place input:focus{
+    background-image: linear-gradient(to bottom, yellow, lightblue);
+    border: 1px solid white;
+}
+
+#place input::placeholder{
+    color: rgba(0, 0, 0, 0.675);
+    padding-left: 5px;
+}
+
+div#place button{
+    width: 300px;
+    height: 35px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+div#place button:hover{
+    background-color: yellow;
+}
+
+div#place ul{
+    margin-top: 20px;
+    width: 270px;
+    align-items: flex-start;
+    list-style-type: disc;
+}
+
+div#place li{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+div#place a{
+    text-decoration: none;
+    color: yellow;
+    text-shadow: 1px 1px 5px black;
+    margin-left: 10px;
+    transition: all ease-in-out 1s;
+    transition: color .5s, text-shadow .5s;
+}
+
+div#place a:hover{
+    color: lightblue;
+    text-shadow: 1px 1px 5px yellow;
 }
